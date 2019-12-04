@@ -1,0 +1,7 @@
+version: '3.6'
+
+services:
+  http:
+    ports:
+      - "8080:80"
+    image: httpd
