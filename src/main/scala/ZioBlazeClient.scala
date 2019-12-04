@@ -31,9 +31,8 @@ object ZioBlazeClient extends App {
             }
           }
 
-          (get.ignore *> sleep(10.milliseconds)).forever.provide(rt.environment)
+          (get.ignore *> sleep(10.milliseconds)).forever.provide(rt.Environment)
         }
-        .nonDaemon
         .as(0)
         .orDie
     }
