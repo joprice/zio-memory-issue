@@ -33,7 +33,6 @@ object ZioBlazeClient extends App {
 
           (get.ignore *> sleep(10.milliseconds)).forever.provide(rt.environment)
         }
-        //.nonDaemon
         .as(0)
         .orDie
     }
